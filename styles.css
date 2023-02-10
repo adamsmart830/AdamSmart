@@ -1,0 +1,58 @@
+body {
+	background-color: powederblue;
+}
+h1{
+	
+	color: blue;
+	font-family: verdana;
+	font-size: 300%;
+	text-align: center;
+	border: 2px solid darkslateblue;
+	padding: 10px;
+}
+p{
+	color: red;
+}
+a{	
+	text-align: center;
+	padding: 50px;
+}
+address{
+	color: darkslateblue;
+	padding: 30px;
+
+
+}
+
+<style>
+a:link {
+
+	color: blue;
+	backgrond-color: transparent;
+	text-decoration: none;
+
+}
+a:visited{
+
+	color: rebeccapurple;
+	backroun-color: transparent;
+	text-decoration: none;
+
+
+}
+
+a:hover {
+
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+
+}
+
+a:active{
+
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+
+}
