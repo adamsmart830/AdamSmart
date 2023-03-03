@@ -7,20 +7,6 @@ canvas.height = window.innerHeight;
 
 
 
-window.addEventListener('resize',  function(event){
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    //dynamically genrate circles when resized
-    init();
-})
-
-
-let mouse = {
-    x: undefined,
-    y: undefined
-}
-
 let maxR = 50;
 let minR = 10;
 
@@ -33,13 +19,6 @@ var colorArray =[
     "Red",
 ];
 
-//mouse movement
-//needs type of event, function to call
-window.addEventListener('mousemove', function(event){
-    mouse.x = event.x;
-    mouse.y = event.y;
-    //console.log(mouse);
-});
 
 //draw some circles and bounce them around the screen
 function Circle(x, y, xSpeed, ySpeed, radius){
@@ -82,7 +61,7 @@ let circleArray = [];
 function init(){
     circleArray = [];
 
-    for(let i =0; i < 100; i++){
+    for(let i =0; i < 1; i++){
         let r = Math.random() * (25 -5*2) +5;
         let x = Math.random() * (canvas.width - r*2) + r;
         let y = Math.random() * (canvas.height - r*2) +r;
