@@ -1,4 +1,4 @@
-.title {
+h2 { 
 	color: red;
 }
 
@@ -6,6 +6,24 @@
 	color: blue;
 }
 
-#contact-us {
+#contact-us{
 	color: green;
+}
+
+li:first-child{
+	color: steelblue;
+}
+li:last-child{
+	color: plum;
+}
+li:nth-child(2){
+	color: darkgreen;
+}
+
+#rcos-link:link {
+
+}
+
+#rcos-link:visited{
+
 }
