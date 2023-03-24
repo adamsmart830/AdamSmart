@@ -1,29 +1,57 @@
+p{
+	text-align: center;
 
+}
+
+.p1{
+	font-family: "Times New Roman", Times, serif;
+}
+.p2{
+	background-image: url('../images/MeasureSegmentTest01.jpg');
+}
+.p3{
+	background-color: blue;
+}
+.p4{
+	background-color: green;
+}
+.p5{
+	background-color: yellow;
+}
+.p6{
+	backround-color: orange;
+}
+.p7{
+	background-color: teal;
+}
+.p8{
+	background-color: pink;
+}
 
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+ 	background-color: #4CAF50; /* Green */
+  	border: none;
+  	color: white;
+  	padding: 16px 32px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	margin: 4px 2px;
+  	transition-duration: 0.4s;
+  	cursor: pointer;
+  	width: 50%;
+ 	margin-left: 25%;
+  	margin-right: 25%;
 }
 
 .button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
+  	background-color: white; 
+  	color: black; 
+  	border: 2px solid #4CAF50;
 }
 
 .button1:hover {
-  background-color: #4CAF50;
-  color: white;
+  	background-color: #4CAF50;
+  	color: white;
 }
