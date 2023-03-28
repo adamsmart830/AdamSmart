@@ -55,3 +55,16 @@ p{
   	background-color: #4CAF50;
   	color: white;
 }
+
+
+.composers {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px; 
+}
+
+#images{
+    text-align:center;
+}
+
