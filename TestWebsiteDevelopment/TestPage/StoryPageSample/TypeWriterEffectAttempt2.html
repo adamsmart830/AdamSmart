@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>TypeWriterEffectTest</title>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+        .console-container {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1vw;
+            position: relative;
+        }
+
+        .console-underscore {
+            display: inline-block;
+            position: relative;
+            color: black;
+        }
+
+        .console-textA{
+            color: green;
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .console-textC{
+            color: green;
+            text-align: left;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+
+        .container {
+            position: relative;
+            text-align: left;
+        }
+        img {
+            width:100%;
+        }
+
+        </style> 
+ 
+    </head>
+    <body>
+         <script>
+
+
+
+
+            function typing_effect(words) {
+
+
+                var cursor = document.getElementById('cursor'); //cursor
+                var text = document.getElementById('text');
+
+                var blink = true;
+                var wait = false;
+                var letters_count = 1;
+                var temp = 1;
+
+                window.setInterval(function () { //wait between words when it starts writting
+                    if (wait === false) { //write words                    
+                        text.innerHTML = words.substr(0, letters_count)
+                        letters_count += temp;
+                    }
+                }, 50)
+                window.setInterval(function () {
+                    if (blink) {
+                        cursor.style.opacity = "0";
+                        blink = false;
+                    } else {
+                        cursor.style.opacity = "1";
+                        blink = true;
+                    }
+                }, 400)
+            }
+
+
+        </script>  
+ <div class="container">
+        <img src="./BassClefPaper.png" alt="Hero Image">
+        <div class='console-container'>
+            <span class="console-textA" id='text'></span>
+            <div class='console-underscore' id='cursor'>|</div>
+            <script>typing_effect("Hellow")</script>
+
+        </div>
+
+        <div class='console-container'>
+            <span class="console-textC" id='text'></span>
+            <div class='console-underscore' id='cursor'>|</div>
+            <script>typing_effect("Yellow")</script>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+       
+
+
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    div {
+      background-color: #ff7a59;
+      border-radius: 5px;
+      color: white;
+      font-family: Arial;
+      margin: 5px;
+      padding: 5px;
+    }
+
+    #span-0 { color: #33475b; }
+
+    #span-1 {
+      background-color: #33475b;
+      text-decoration: underline;
+    }
+
+    #span-2:hover {
+      cursor: pointer;
+      opacity: 0.8;
+  }
+
+
+  </style>
+
+</head>
+<body>
+    <script type="text/javascript">
+        function alertFunction() {
+            alert("You clicked me!");
+        }
+    </script>
+
+    <div>
+        <p>
+            We can use the div element to separate contents of a page into chunks. Each of these orange blocks is a div element.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            We can use a span tag to <span id="span-0">change the color</span> of text.
+        </p>
+    </div>
+    
+    <div>
+        <p>
+            We can also use span to 
+            <span id="span-1">
+                change other style aspects
+            </span> of text as well.
+        </p>
+    </div>
+
+    <div>
+        <p>Span tags can apply to other things besides text. Try hovering over and clicking the sprocket icon below.</p>
+        <span id="span-2" onclick="alertFunction()"><img src="https://assets.codepen.io/6093409/sprocket.svg" /></span>
+  </div>
+
+</body>
+</html>
