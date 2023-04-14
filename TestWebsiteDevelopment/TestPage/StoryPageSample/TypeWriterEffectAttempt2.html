@@ -66,8 +66,9 @@
                 var temp = 1;
 
                 window.setInterval(function () { //wait between words when it starts writting
-                    if (wait === false) { //write words                    
-                        text.innerHTML = words[0].substr(0, letters_count)
+                   if (wait === false) { //write words    
+                        text.innerHTML = words.substr(0, letters_count)
+
                         letters_count += temp;
                     }
                 }, 50)
