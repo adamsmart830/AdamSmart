@@ -2,7 +2,7 @@ Website Structure
 	
 Starting Page:
 	index.html
-		----> NewMainPage.html
+		----> TimePeriodSelectionPage.html
 				----> BaroquePage.html
 					----> BaroqueStoryPage1.html
 					----> BaroqueStoryPage2.html
