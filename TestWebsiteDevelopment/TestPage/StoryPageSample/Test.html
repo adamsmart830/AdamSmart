@@ -56,12 +56,13 @@ var txt1 = "Yep this shit is fucked"
 var speed = 50;
 
 function typeWriter0() {
+  setTimeout(typeWriter1, 1500);
   if (i < txt0.length) {
     document.getElementById("demo").innerHTML += txt0.charAt(i);
     i++;
     setTimeout(typeWriter0, speed);
   }
-  setTimeout(typeWriter1, 1000);
+  
 }
 
 function typeWriter1(){
