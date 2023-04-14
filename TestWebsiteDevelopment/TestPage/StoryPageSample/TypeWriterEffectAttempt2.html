@@ -53,7 +53,7 @@
 
 
 
-
+            typing_effect("Hellow")
             function typing_effect(words) {
 
 
@@ -66,8 +66,9 @@
                 var temp = 1;
 
                 window.setInterval(function () { //wait between words when it starts writting
-                    if (wait === false) { //write words    
+                   if (wait === false) { //write words    
                         text.innerHTML = words.substr(0, letters_count)
+
                         letters_count += temp;
                     }
                 }, 50)
@@ -89,16 +90,10 @@
         <div class='console-container'>
             <span class="console-textA" id='text'></span>
             <div class='console-underscore' id='cursor'>|</div>
-            <script>typing_effect("Hellow")</script>
-
+            <script>typing_effect()</script>
+            <script>setTimeout(typing_effect(),500)</script>
         </div>
 
-        <div class='console-container'>
-            <span class="console-textC" id='text'></span>
-            <div class='console-underscore' id='cursor'>|</div>
-            <script>typing_effect("Yellow")</script>
-
-        </div>
 
 
 
