@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Typewriter</h1>
+
+<button onclick="typeWriter0()">Click me</button>
+<button onclick="typeWriter1()">Click me</button>
+
+
+
+
+<style>
+  .container{
+    position: absolute;
+    text-align: center;
+    color: black;
+  }
+  .A{
+    position: absolute;
+    font-size: 1vw;
+    bottom: 88.5%;
+    left: 7%;
+  }
+  .B{
+    position: absolute;
+    font-size: 1vw;
+    bottom: 91.25%;
+    left: 7%;
+  }
+
+  p{
+    position:relative;
+    color: blue;
+  }
+  img{
+    width: 100%;
+  }
+
+</style>
+
+
+<div class= "container">
+    <image src="./BassClefPaper.png">
+    <div class="A" id="demo"></div>
+    <div class="B" id="dema"></div>
+</div>
+
+
+
+<script>
+var i = 0;
+var j = 0;
+var txt0 = 'Lorem ipsum dummy text blabla.';
+var txt1 = "Yep this shit is fucked"
+var speed = 50;
+
+function typeWriter0() {
+  setTimeout(typeWriter1, 1500);
+  if (i < txt0.length) {
+    document.getElementById("demo").innerHTML += txt0.charAt(i);
+    i++;
+    setTimeout(typeWriter0, speed);
+  }
+  
+}
+
+function typeWriter1(){
+  if (i < txt1.length) {
+    document.getElementById("dema").innerHTML += txt1.charAt(j);
+    j++;
+    setTimeout(typeWriter1, speed);
+  }
+}
+
+
+</script>
+
+</body>
+</html>

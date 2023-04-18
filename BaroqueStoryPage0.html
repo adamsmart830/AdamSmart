@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html>
 <body>
+
+<audio control autoplay>
+  <source src="./MinuetNo2.mp3" type="audio/mpeg">
+</audio>
+
 <style>
     .container{
         position: absolute;
         text-align: center;
         color: black;
     }
-    .A{
+    .A1{
         position: absolute;
         font-size: 1vw;
         bottom: 88.5%;
         left: 7%;
     }
-    .C{
+    .C1{
         position: absolute;
         font-size: 1vw;
         bottom: 91.25%;
         left: 17%;
     }
-    .E{
+    .E1{
         position: absolute;
         font-size: 1vw;
         bottom: 94%;
         left: 37%;
     }
-    .G{
+    .G1{
         position: absolute;
         font-size: 1vw;
         bottom: 96.75%;
@@ -45,10 +50,10 @@
 
 <div class= "container">
     <image src="./images/BassClefPaper.png">
-    <div class="A" id="a"></div>
-    <div class="C" id="c"></div>
-    <div class="G" id="g"></div>
-    <div class="E" id="e"></div>
+    <div class="A1" id="a1"></div>
+    <div class="C1" id="c1"></div>
+    <div class="G1" id="g1"></div>
+    <div class="E1" id="e1"></div>
 </div>
 
 
@@ -58,10 +63,13 @@
     var i1 = 0;
     var i2 = 0;
     var i3 = 0;
-    var txt0 = "I remember the day vividly, the day when I was taken to see my first live performance";
-    var txt1 = "I was a young boy, barely seven years old, and my parents had surprised me with tickets to see world renowned cellist Yo-Yo Ma."
-    var txt2 = "Words should defintly go here!";
-    var txt3 = "I had never been to a concert before, let alone a cello concert, so I was excited but also a little nervous."
+    var i4 = 0;
+
+    var txt0 = "Music has always been a facet of my life.";
+    var txt1 = "My parents, both of whom play the piano, thought playing an instrument was an important part of development."
+    var txt2 = "And so, on my ninth birthday I was handed my first real instrument.";
+    var txt3 = "I remember being absolutely ecstatic to be handed my first cello.";
+    var txt4 = "A half size, largely carved from maple wood with a spruce top.";
     var speed = 30;
 
 
@@ -70,17 +78,15 @@
 
 
         if (i0 < txt0.length) {
-            document.getElementById("a").innerHTML += txt0.charAt(i0);
+            document.getElementById("a1").innerHTML += txt0.charAt(i0);
             i0++;
             setTimeout(typeWriter0, speed);
         }
-        
-     
     }
 
     function typeWriter1(){
         if (i1 < txt1.length) {
-            document.getElementById("c").innerHTML += txt1.charAt(i1);
+            document.getElementById("c1").innerHTML += txt1.charAt(i1);
             i1++;
             setTimeout(typeWriter1, speed);
         }
@@ -88,7 +94,7 @@
 
     function typeWriter2(){
         if (i2 < txt2.length) {
-            document.getElementById("e").innerHTML += txt2.charAt(i2);
+            document.getElementById("g1").innerHTML += txt2.charAt(i2);
             i2++;
             setTimeout(typeWriter2, speed);
         }
@@ -96,16 +102,26 @@
 
     function typeWriter3(){
         if (i3 < txt3.length) {
-            document.getElementById("g").innerHTML += txt3.charAt(i3);
+            document.getElementById("e1").innerHTML += txt3.charAt(i3);
+            i3++;
+            setTimeout(typeWriter3, speed);
+        }
+    }
+
+    function typeWriter3(){
+        if (i3 < txt4.length) {
+            document.getElementById("a2").innerHTML += txt3.charAt(i3);
             i3++;
             setTimeout(typeWriter3, speed);
         }
     }
 
     typeWriter0()
-    setTimeout(typeWriter1, 3000)
+    setTimeout(typeWriter1, 1400)
+    setTimeout(typeWriter2, 5000)
     setTimeout(typeWriter3, 7500)
-    setTimeout(typeWriter2, 11000)
+    i3 = 0;
+    setTimeout(typeWriter4, 10000)
 
 
 </script>

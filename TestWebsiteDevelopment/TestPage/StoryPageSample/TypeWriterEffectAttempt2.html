@@ -66,8 +66,19 @@
                 var temp = 1;
 
                 window.setInterval(function () { //wait between words when it starts writting
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    if (wait === false) { //write words    
+                        text.innerHTML = words.substr(0, letters_count)
+=======
                     if (wait === false) { //write words                    
                         text.innerHTML = words[0].substr(0, letters_count)
+>>>>>>> 5f7dbc30dbe95c1d90c85eab6348e0d617f26dbd
+=======
+                   if (wait === false) { //write words    
+                        text.innerHTML = words.substr(0, letters_count)
+
+>>>>>>> 89f4205216755431629d5a67eb9724b4145c7761
                         letters_count += temp;
                     }
                 }, 50)

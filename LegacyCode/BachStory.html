@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    .container{
+        position: absolute;
+        text-align: center;
+        color: black;
+    }
+    .A{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 88.5%;
+        left: 7%;
+    }
+    .C{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 91.25%;
+        left: 20%;
+    }
+    .E{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 94%;
+        left: 20%;
+    }
+    .G{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 96.75%;
+        left: 20%;
+    }
+
+    p{
+        position:relative;
+        color: blue;
+    }
+    img{
+        width: 100%;
+    }
+
+</style>
+
+
+<div class= "container">
+    <image src="./BassClefPaper.png">
+    <div class="A" id="a"></div>
+    <div class="C" id="c"></div>
+    <div class="E" id="e"></div>
+    <div class="G" id="g"></div>
+</div>
+
+
+
+<script>
+    var i0 = 0;
+    var i1 = 0;
+    var i2 = 0;
+    var i3 = 0;
+    var txt0 = 'Lorem ipsum dummy text blabla.';
+    var txt1 = "Yep this shit is fucked"
+    var txt2 = "Words should defintly go here!";
+    var txt3 = "Well you sure did try!"
+    var speed = 30;
+
+
+
+    function typeWriter0() {
+
+
+        if (i0 < txt0.length) {
+            document.getElementById("a").innerHTML += txt0.charAt(i0);
+            i0++;
+            setTimeout(typeWriter0, speed);
+        }
+        
+     
+    }
+
+    function typeWriter1(){
+        if (i1 < txt1.length) {
+            document.getElementById("c").innerHTML += txt1.charAt(i1);
+            i1++;
+            setTimeout(typeWriter1, speed);
+        }
+    }
+
+    function typeWriter2(){
+        if (i2 < txt2.length) {
+            document.getElementById("e").innerHTML += txt2.charAt(i2);
+            i2++;
+            setTimeout(typeWriter2, speed);
+        }
+    }
+
+    function typeWriter3(){
+        if (i3 < txt3.length) {
+            document.getElementById("g").innerHTML += txt3.charAt(i3);
+            i3++;
+            setTimeout(typeWriter3, speed);
+        }
+    }
+
+    typeWriter0()
+    setTimeout(typeWriter1, 2000)
+    setTimeout(typeWriter2, 4000)
+    setTimeout(typeWriter3, 6000)
+
+
+</script>
+
+</body>
+</html>
