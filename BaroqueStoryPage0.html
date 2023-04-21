@@ -15,14 +15,14 @@
     .A1{
         position: absolute;
         font-size: 1vw;
-        bottom: 88.5%;
+        bottom: 88.25%;
         left: 7%;
     }
     .C1{
         position: absolute;
         font-size: 1vw;
         bottom: 91.25%;
-        left: 17%;
+        left: 30%;
     }
     .E1{
         position: absolute;
@@ -34,7 +34,98 @@
         position: absolute;
         font-size: 1vw;
         bottom: 96.75%;
+        left: 60%;
+    }
+
+
+
+
+
+
+    .A2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 59%;
+        left: 67%;
+    }
+    .C2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 61.75%;
+        left: 47%;
+    }
+    .E2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 64.75%;
         left: 27%;
+    }
+    .G2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 67.5%;
+        left: 7%;
+    }
+
+
+
+
+
+
+    .A3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 30%;
+        left: 7%;
+    }
+    .C3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 32.75%;
+        left: 57%;
+    }
+    .E3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 35.5%;
+        left: 40%;
+    }
+    .G3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 38.25%;
+        left: 23.66%;
+    }
+
+
+
+
+
+
+
+    .A4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: .5%;
+        left: 76%;
+    }
+    .C4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 3.5%;
+        left: 7%;
+    }
+    .E4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 6.25%;
+        left: 30%;
+    }
+    .G4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 9.0%;
+        left: 53%;
     }
 
     p{
@@ -54,74 +145,199 @@
     <div class="C1" id="c1"></div>
     <div class="G1" id="g1"></div>
     <div class="E1" id="e1"></div>
+    <div class="A2" id="a2"></div>
+    <div class="C2" id="c2"></div>
+    <div class="G2" id="g2"></div>
+    <div class="E2" id="e2"></div>
+    <div class="A3" id="a3"></div>
+    <div class="C3" id="c3"></div>
+    <div class="G3" id="g3"></div>
+    <div class="E3" id="e3"></div>
+    <div class="A4" id="a4"></div>
+    <div class="C4" id="c4"></div>
+    <div class="G4" id="g4"></div>
+    <div class="E4" id="e4"></div>
 </div>
 
 
 
 <script>
-    var i0 = 0;
-    var i1 = 0;
-    var i2 = 0;
-    var i3 = 0;
-    var i4 = 0;
+    var i00 = 0;
+    var i01 = 0;
+    var i02 = 0;
+    
+    var i10 = 0;
+    var i11 = 0;
+    var i12 = 0;
+    var i13 = 0;
 
-    var txt0 = "Music has always been a facet of my life.";
-    var txt1 = "My parents, both of whom play the piano, thought playing an instrument was an important part of development."
-    var txt2 = "And so, on my ninth birthday I was handed my first real instrument.";
-    var txt3 = "I remember being absolutely ecstatic to be handed my first cello.";
-    var txt4 = "A half size, largely carved from maple wood with a spruce top.";
+    var i20 = 0;
+    var i21 = 0;
+    var i22 = 0;
+    var i23 = 0;
+
+    var i30 = 0;
+    var i31 = 0;
+    var i32 = 0;
+    var i33 = 0;
+
+
+
+
+    var txt00 = "When I was 7, my father took my brother and I to see the New York Philharmonic.";
+    var txt01 = "Although the trip was mainly for my brother's enjoyment, I was truly blown away that day"
+    var txt02 = "The memory of that day is still vivid…";
+
+    var txt10 = "As the lights dimmed and the orchestra took their seats,";
+    var txt11 = "a hush fell over the audience and the ocean of chatter that filled the room quickly dissipated.";
+    var txt12 = "The conductor, poised and attentive, raises his baton and commands the ensemble to begin.";
+    var txt13 = "The first notes of the symphony rang out and the room was filled with sound.";
+
+    var txt20 = "The strings and woodwinds worked in synchrony to create a sense of quiet calm.";
+    var txt21 = "The piece progressed and the tempo began to quicken.";
+    var txt22 = "The mood shifted as the brass entered, ringing out and building emotion.";
+    var txt23 = "Then comes the percussion, adding texture, and driving the piece forward with a steady, rhythmic beat.";
+
+    var txt30 = "A tapestry of melody and harmony had been woven together by the masterful musicians on stage.";
+    var txt31 = "Just as suddenly as it began, the symphony came to a close as the final notes faded away.";
+    var txt32 = "I remember as the audience sat in their seats stunned in silence.";
+    var txt33 = "From that moment, I knew I wanted to be a musician...";
+
+
     var speed = 30;
 
 
 
-    function typeWriter0() {
-
-
-        if (i0 < txt0.length) {
-            document.getElementById("a1").innerHTML += txt0.charAt(i0);
-            i0++;
-            setTimeout(typeWriter0, speed);
+    function typeWriter00() {
+        if (i00 < txt00.length) {
+            document.getElementById("a1").innerHTML += txt00.charAt(i00);
+            i00++;
+            setTimeout(typeWriter00, speed);
         }
     }
 
-    function typeWriter1(){
-        if (i1 < txt1.length) {
-            document.getElementById("c1").innerHTML += txt1.charAt(i1);
-            i1++;
-            setTimeout(typeWriter1, speed);
+    function typeWriter01(){
+        if (i01 < txt01.length) {
+            document.getElementById("c1").innerHTML += txt01.charAt(i01);
+            i01++;
+            setTimeout(typeWriter01, speed);
         }
     }
 
-    function typeWriter2(){
-        if (i2 < txt2.length) {
-            document.getElementById("g1").innerHTML += txt2.charAt(i2);
-            i2++;
-            setTimeout(typeWriter2, speed);
+    function typeWriter02(){
+        if (i02 < txt02.length) {
+            document.getElementById("g1").innerHTML += txt02.charAt(i02);
+            i02++;
+            setTimeout(typeWriter02, speed);
         }
     }
 
-    function typeWriter3(){
-        if (i3 < txt3.length) {
-            document.getElementById("e1").innerHTML += txt3.charAt(i3);
-            i3++;
-            setTimeout(typeWriter3, speed);
+    function typeWriter10(){
+        if (i10 < txt10.length) {
+            document.getElementById("g2").innerHTML += txt10.charAt(i10);
+            i10++;
+            setTimeout(typeWriter10, speed);
         }
     }
 
-    function typeWriter3(){
-        if (i3 < txt4.length) {
-            document.getElementById("a2").innerHTML += txt3.charAt(i3);
-            i3++;
-            setTimeout(typeWriter3, speed);
+    function typeWriter11(){
+        if (i11 < txt11.length) {
+            document.getElementById("e2").innerHTML += txt11.charAt(i11);
+            i11++;
+            setTimeout(typeWriter11, speed);
+        }
+    }
+    
+    function typeWriter12(){
+        if (i12 < txt12.length) {
+            document.getElementById("c2").innerHTML += txt12.charAt(i12);
+            i12++;
+            setTimeout(typeWriter12, speed);
         }
     }
 
-    typeWriter0()
-    setTimeout(typeWriter1, 1400)
-    setTimeout(typeWriter2, 5000)
-    setTimeout(typeWriter3, 7500)
-    i3 = 0;
-    setTimeout(typeWriter4, 10000)
+    function typeWriter13(){
+        if (i13 < txt13.length) {
+            document.getElementById("a2").innerHTML += txt13.charAt(i13);
+            i13++;
+            setTimeout(typeWriter13, speed);
+        }
+    }
+
+    function typeWriter20(){
+        if (i20 < txt20.length) {
+            document.getElementById("a3").innerHTML += txt20.charAt(i20);
+            i20++;
+            setTimeout(typeWriter20, speed);
+        }
+    }
+    function typeWriter21(){
+        if (i21 < txt21.length) {
+            document.getElementById("g3").innerHTML += txt21.charAt(i21);
+            i21++;
+            setTimeout(typeWriter21, speed);
+        }
+    }
+    function typeWriter22(){
+        if (i22 < txt22.length) {
+            document.getElementById("e3").innerHTML += txt22.charAt(i22);
+            i22++;
+            setTimeout(typeWriter22, speed);
+        }
+    }
+    function typeWriter23(){
+        if (i23 < txt23.length) {
+            document.getElementById("c3").innerHTML += txt23.charAt(i23);
+            i23++;
+            setTimeout(typeWriter23, speed);
+        }
+    }
+    function typeWriter30(){
+        if (i30 < txt30.length) {
+            document.getElementById("c4").innerHTML += txt30.charAt(i30);
+            i30++;
+            setTimeout(typeWriter30, speed);
+        }
+    }
+    function typeWriter31(){
+        if (i31 < txt31.length) {
+            document.getElementById("e4").innerHTML += txt31.charAt(i31);
+            i31++;
+            setTimeout(typeWriter31, speed);
+        }
+    }
+    function typeWriter32(){
+        if (i32 < txt32.length) {
+            document.getElementById("g4").innerHTML += txt32.charAt(i32);
+            i32++;
+            setTimeout(typeWriter32, speed);
+        }
+    }
+    function typeWriter33(){
+        if (i33 < txt33.length) {
+            document.getElementById("a4").innerHTML += txt33.charAt(i33);
+            i33++;
+            setTimeout(typeWriter33, speed);
+        }
+    }
+    
+
+    typeWriter00()
+    setTimeout(typeWriter01, 2400)
+    setTimeout(typeWriter02, 5250)
+    setTimeout(typeWriter10, 6900)
+    setTimeout(typeWriter11, 9000)
+    setTimeout(typeWriter12, 12000)
+    setTimeout(typeWriter13, 14800)
+    setTimeout(typeWriter20, 17550)
+    setTimeout(typeWriter21, 20250)
+    setTimeout(typeWriter22, 22200)
+    setTimeout(typeWriter23, 24800)
+    setTimeout(typeWriter30, 28600)
+    setTimeout(typeWriter31, 31900)
+    setTimeout(typeWriter32, 35009)
+    setTimeout(typeWriter33, 37169)
+
 
 
 </script>
