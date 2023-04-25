@@ -20,13 +20,13 @@
         position: absolute;
         font-size: 1vw;
         bottom: 91.25%;
-        left: 65%;
+        left: 30%;
     }
     .E1{
         position: absolute;
         font-size: 1vw;
         bottom: 94%;
-        left: 85%;
+        left: 37%;
     }
     .G1{
         position: absolute;
@@ -50,13 +50,13 @@
         position: absolute;
         font-size: 1vw;
         bottom: 61.75%;
-        left: 70%;
+        left: 47%;
     }
     .E2{
         position: absolute;
         font-size: 1vw;
         bottom: 64.75%;
-        left: 40%;
+        left: 27%;
     }
     .G2{
         position: absolute;
@@ -80,19 +80,19 @@
         position: absolute;
         font-size: 1vw;
         bottom: 32.75%;
-        left: 85%;
+        left: 57%;
     }
     .E3{
         position: absolute;
         font-size: 1vw;
         bottom: 35.5%;
-        left: 53%;
+        left: 40%;
     }
     .G3{
         position: absolute;
         font-size: 1vw;
         bottom: 38.25%;
-        left: 33%;
+        left: 23.66%;
     }
 
 
@@ -105,7 +105,7 @@
         position: absolute;
         font-size: 1vw;
         bottom: .5%;
-        left: 85%;
+        left: 76%;
     }
     .C4{
         position: absolute;
@@ -117,7 +117,7 @@
         position: absolute;
         font-size: 1vw;
         bottom: 6.25%;
-        left: 33%;
+        left: 30%;
     }
     .G4{
         position: absolute;
@@ -143,17 +143,14 @@
     <div class="C1" id="c1"></div>
     <div class="G1" id="g1"></div>
     <div class="E1" id="e1"></div>
-    
     <div class="A2" id="a2"></div>
     <div class="C2" id="c2"></div>
     <div class="G2" id="g2"></div>
     <div class="E2" id="e2"></div>
-
     <div class="A3" id="a3"></div>
     <div class="C3" id="c3"></div>
     <div class="G3" id="g3"></div>
     <div class="E3" id="e3"></div>
-    
     <div class="A4" id="a4"></div>
     <div class="C4" id="c4"></div>
     <div class="G4" id="g4"></div>
@@ -166,7 +163,6 @@
     var i00 = 0;
     var i01 = 0;
     var i02 = 0;
-    var i03 = 0;
     
     var i10 = 0;
     var i11 = 0;
@@ -186,26 +182,24 @@
 
 
 
-    var txt00 = "I am writing this recollection of my story with great nostalgia that almost makes me want to start playing all over again.";
-    var txt01 = "But unfortunately that's just it."
-    var txt02 = "I don’t want to keep on playing.";
-    var txt03 = "";
+    var txt00 = "When I was 7, my father took my brother and I to see the New York Philharmonic.";
+    var txt01 = "Although the trip was mainly for my brother's enjoyment, I was truly blown away that day"
+    var txt02 = "The memory of that day is still vivid…";
 
+    var txt10 = "As the lights dimmed and the orchestra took their seats,";
+    var txt11 = "a hush fell over the audience and the ocean of chatter that filled the room quickly dissipated.";
+    var txt12 = "The conductor, poised and attentive, raises his baton and commands the ensemble to begin.";
+    var txt13 = "The first notes of the symphony rang out and the room was filled with sound.";
 
-    var txt10 = "“The cello has been apart of my identity for such a long period of time”";
-    var txt11 = "I even once considered it my true passion.";
-    var txt12 = "But I am older now, and haven’t learned anything new in years";
-    var txt13 = "";
+    var txt20 = "The strings and woodwinds worked in synchrony to create a sense of quiet calm.";
+    var txt21 = "The piece progressed and the tempo began to quicken.";
+    var txt22 = "The mood shifted as the brass entered, ringing out and building emotion.";
+    var txt23 = "Then comes the percussion, adding texture, and driving the piece forward with a steady, rhythmic beat.";
 
-    var txt20 = "Maybe that's the reason I’m writing these memories,";
-    var txt21 = "To rekindle the joy that once burned so brightly"
-    var txt22 = "My cello once proudly displayed in my living room";
-    var txt23 = "now collects dust it's case";
-
-    var txt30 = "There wasn't really any reason behind it";
-    var txt31 = "I just grew detatched from the instrument";
-    var txt32 = "I desparately wanted to keep my interest, but each day it got harder and harder to play";
-    var txt33 = "Is that such a bad thing?"
+    var txt30 = "A tapestry of melody and harmony had been woven together by the masterful musicians on stage.";
+    var txt31 = "Just as suddenly as it began, the symphony came to a close as the final notes faded away.";
+    var txt32 = "I remember as the audience sat in their seats stunned in silence.";
+    var txt33 = "From that moment, I knew I wanted to be a musician...";
 
 
     var speed = 30;
@@ -230,20 +224,11 @@
 
     function typeWriter02(){
         if (i02 < txt02.length) {
-            document.getElementById("e1").innerHTML += txt02.charAt(i02);
+            document.getElementById("g1").innerHTML += txt02.charAt(i02);
             i02++;
             setTimeout(typeWriter02, speed);
         }
     }
-
-    function typeWriter03(){
-        if (i03 < txt03.length) {
-            document.getElementById("g1").innerHTML += txt03.charAt(i03);
-            i03++;
-            setTimeout(typeWriter03, speed);
-        }
-    }
-
 
     function typeWriter10(){
         if (i10 < txt10.length) {
@@ -334,45 +319,22 @@
         }
     }
     
-    var timeout = 0;
 
     typeWriter00()
-    timeout += ( (txt00.length + 1)  * 30) 
-    setTimeout(typeWriter01, timeout)
-    timeout += ( (txt01.length + 1)  * 30) 
-    setTimeout(typeWriter02, timeout)
-    timeout += ( (txt02.length + 1)  * 30) 
-    setTimeout(typeWriter03, timeout)
-    timeout += ( (txt03.length + 1)  * 30) 
-    
-    setTimeout(typeWriter10, timeout)
-    timeout += ( (txt10.length + 1)  * 30) 
-    setTimeout(typeWriter11, timeout)
-    timeout += ( (txt11.length + 1)  * 30) 
-    setTimeout(typeWriter12, timeout)
-    timeout += ( (txt12.length + 1)  * 30) 
-    setTimeout(typeWriter03, timeout)
-    timeout += ( (txt13.length + 1)  * 30) 
-    // setTimeout(typeWriter13, )
-   
-    
-    setTimeout(typeWriter20, timeout)
-    timeout += ( (txt20.length + 1)  * 30) 
-    setTimeout(typeWriter21, timeout)
-    timeout += ( (txt21.length + 1)  * 30) 
-    setTimeout(typeWriter22, timeout)
-    timeout += ( (txt22.length + 1)  * 30) 
-    setTimeout(typeWriter23, timeout)
-    timeout += ( (txt23.length + 1)  * 30) 
-    
-
-    setTimeout(typeWriter30, timeout)
-    timeout += ( (txt30.length + 1)  * 30) 
-    setTimeout(typeWriter31, timeout)
-    timeout += ( (txt31.length + 1)  * 30) 
-    setTimeout(typeWriter32, timeout)
-    timeout += ( (txt32.length + 1)  * 30) 
-    setTimeout(typeWriter33, timeout)
+    setTimeout(typeWriter01, 2400)
+    setTimeout(typeWriter02, 5250)
+    setTimeout(typeWriter10, 6900)
+    setTimeout(typeWriter11, 9000)
+    setTimeout(typeWriter12, 12000)
+    setTimeout(typeWriter13, 14800)
+    setTimeout(typeWriter20, 17550)
+    setTimeout(typeWriter21, 20250)
+    setTimeout(typeWriter22, 22200)
+    setTimeout(typeWriter23, 24800)
+    setTimeout(typeWriter30, 28600)
+    setTimeout(typeWriter31, 31900)
+    setTimeout(typeWriter32, 35009)
+    setTimeout(typeWriter33, 37169)
 
 
 
