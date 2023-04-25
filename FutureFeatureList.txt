@@ -1,13 +1,6 @@
 Website Future Feature List:
 
-- Page Transitions
-- Complete Template Pages
-- Easy access to writing over images
-- Image hover pop out 
-- Music on final pages
+- build third option page
+- get 6 music scores for sample art
+- animate the story on 3/12 pages
 - 
-
-
-
-
-

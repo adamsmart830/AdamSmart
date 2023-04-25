@@ -105,7 +105,7 @@
         position: absolute;
         font-size: 1vw;
         bottom: .5%;
-        left: 76%;
+        left: 72%;
     }
     .C4{
         position: absolute;
@@ -143,14 +143,17 @@
     <div class="C1" id="c1"></div>
     <div class="G1" id="g1"></div>
     <div class="E1" id="e1"></div>
+    
     <div class="A2" id="a2"></div>
     <div class="C2" id="c2"></div>
     <div class="G2" id="g2"></div>
     <div class="E2" id="e2"></div>
+
     <div class="A3" id="a3"></div>
     <div class="C3" id="c3"></div>
     <div class="G3" id="g3"></div>
     <div class="E3" id="e3"></div>
+    
     <div class="A4" id="a4"></div>
     <div class="C4" id="c4"></div>
     <div class="G4" id="g4"></div>
@@ -163,6 +166,7 @@
     var i00 = 0;
     var i01 = 0;
     var i02 = 0;
+    var i03 = 0;
     
     var i10 = 0;
     var i11 = 0;
@@ -185,19 +189,22 @@
     var txt00 = "Two years had gone by since I started taking cello lessons with Mrs Handman.";
     var txt01 = "To me, she was a great teacher and things were progressing smoothly."
     var txt02 = "Week after week I practiced and quickly got a lot better than my peers at school.";
-    var txt03 = "I knew this was thanks to my private lessons, but I took pride in being the best at something."
+    var txt03 = "I knew this was thanks to my private lessons, but I still took pride in being the best at something."
+
 
     var txt10 = "“We can no longer continue our lessons after this week”";
     var txt11 = "Was a jarring thing to hear as I was packing up my cello to leave.";
     var txt12 = "I looked at her with bewilderment and asked what the reason was.";
 
     var txt20 = "She explained that her time in the area was up and she was moving away soon.";
-    var txt21 = "She assured me it was nothing I did wrong, and it was just how life goes.";
-    var txt22 = "I didn’t realize till much later that Miss Handman was a college student and teaching was a side gig";
+    var txt21 = "I can imagine how panicked I looked in that moment and "
+    var txt22 = "she assured me it was nothing I did wrong, it was just how life goes.";
+    var txt23 = "I didn’t realize till much later that Miss Handman was a college student and teaching was a side gig";
 
     var txt30 = "After we said our goodbyes I walked out of the building.";
     var txt31 = "I never saw Miss Handman again, but I’m still hoping I run into her eventually";
     var txt32 = "One thing she left me with was a brochure for an organization called Stringendo";
+    var txt33 = "Little did I know, my world of music was about to grow again"
 
 
     var speed = 30;
@@ -222,11 +229,20 @@
 
     function typeWriter02(){
         if (i02 < txt02.length) {
-            document.getElementById("g1").innerHTML += txt02.charAt(i02);
+            document.getElementById("e1").innerHTML += txt02.charAt(i02);
             i02++;
             setTimeout(typeWriter02, speed);
         }
     }
+
+    function typeWriter03(){
+        if (i03 < txt03.length) {
+            document.getElementById("g1").innerHTML += txt03.charAt(i03);
+            i03++;
+            setTimeout(typeWriter03, speed);
+        }
+    }
+
 
     function typeWriter10(){
         if (i10 < txt10.length) {
@@ -317,22 +333,43 @@
         }
     }
     
+    var timeout = 0;
 
     typeWriter00()
-    setTimeout(typeWriter01, 2400)
-    setTimeout(typeWriter02, 5250)
-    setTimeout(typeWriter10, 6900)
-    setTimeout(typeWriter11, 9000)
-    setTimeout(typeWriter12, 12000)
-    setTimeout(typeWriter13, 14800)
-    setTimeout(typeWriter20, 17550)
-    setTimeout(typeWriter21, 20250)
-    setTimeout(typeWriter22, 22200)
-    setTimeout(typeWriter23, 24800)
-    setTimeout(typeWriter30, 28600)
-    setTimeout(typeWriter31, 31900)
-    setTimeout(typeWriter32, 35009)
-    setTimeout(typeWriter33, 37169)
+    timeout += ( (txt00.length + 1)  * 30) 
+    setTimeout(typeWriter01, timeout)
+    timeout += ( (txt01.length + 1)  * 30) 
+    setTimeout(typeWriter02, timeout)
+    timeout += ( (txt02.length + 1)  * 30) 
+    setTimeout(typeWriter03, timeout)
+    timeout += ( (txt03.length + 1)  * 30) 
+    
+    setTimeout(typeWriter10, timeout)
+    timeout += ( (txt10.length + 1)  * 30) 
+    setTimeout(typeWriter11, timeout)
+    timeout += ( (txt11.length + 1)  * 30) 
+    setTimeout(typeWriter12, timeout)
+    timeout += ( (txt12.length + 1)  * 30) 
+    // setTimeout(typeWriter13, )
+   
+    
+    setTimeout(typeWriter20, timeout)
+    timeout += ( (txt20.length + 1)  * 30) 
+    setTimeout(typeWriter21, timeout)
+    timeout += ( (txt21.length + 1)  * 30) 
+    setTimeout(typeWriter22, timeout)
+    timeout += ( (txt22.length + 1)  * 30) 
+    setTimeout(typeWriter23, timeout)
+    timeout += ( (txt23.length + 1)  * 30) 
+    
+
+    setTimeout(typeWriter30, timeout)
+    timeout += ( (txt30.length + 1)  * 30) 
+    setTimeout(typeWriter31, timeout)
+    timeout += ( (txt31.length + 1)  * 30) 
+    setTimeout(typeWriter32, timeout)
+    timeout += ( (txt32.length + 1)  * 30) 
+    setTimeout(typeWriter33, timeout)
 
 
 
