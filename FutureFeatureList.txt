@@ -1,6 +1,4 @@
 Website Future Feature List:
 
-- build third option page
-- get 6 music scores for sample art
 - animate the story on 3/12 pages
 - 
