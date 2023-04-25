@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<style>
+    .container{
+        position: absolute;
+        text-align: center;
+        color: black;
+    }
+    .A1{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 88.25%;
+        left: 7%;
+    }
+    .C1{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 91.25%;
+        left: 30%;
+    }
+    .E1{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 94%;
+        left: 37%;
+    }
+    .G1{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 96.75%;
+        left: 60%;
+    }
+
+
+
+
+
+
+    .A2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 59%;
+        left: 67%;
+    }
+    .C2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 61.75%;
+        left: 47%;
+    }
+    .E2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 64.75%;
+        left: 27%;
+    }
+    .G2{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 67.5%;
+        left: 7%;
+    }
+
+
+
+
+
+
+    .A3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 30%;
+        left: 7%;
+    }
+    .C3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 32.75%;
+        left: 57%;
+    }
+    .E3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 35.5%;
+        left: 40%;
+    }
+    .G3{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 38.25%;
+        left: 23.66%;
+    }
+
+
+
+
+
+
+
+    .A4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: .5%;
+        left: 72%;
+    }
+    .C4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 3.5%;
+        left: 7%;
+    }
+    .E4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 6.25%;
+        left: 30%;
+    }
+    .G4{
+        position: absolute;
+        font-size: 1vw;
+        bottom: 9.0%;
+        left: 53%;
+    }
+
+    p{
+        position:relative;
+        color: blue;
+    }
+    img{
+        width: 100%;
+    }
+
+</style>
+
+
+<div class= "container">
+    <image src="./images/BassClefPaper.png">
+    <div class="A1" id="a1"></div>
+    <div class="C1" id="c1"></div>
+    <div class="G1" id="g1"></div>
+    <div class="E1" id="e1"></div>
+    
+    <div class="A2" id="a2"></div>
+    <div class="C2" id="c2"></div>
+    <div class="G2" id="g2"></div>
+    <div class="E2" id="e2"></div>
+
+    <div class="A3" id="a3"></div>
+    <div class="C3" id="c3"></div>
+    <div class="G3" id="g3"></div>
+    <div class="E3" id="e3"></div>
+    
+    <div class="A4" id="a4"></div>
+    <div class="C4" id="c4"></div>
+    <div class="G4" id="g4"></div>
+    <div class="E4" id="e4"></div>
+</div>
+
+
+
+<script>
+    var i00 = 0;
+    var i01 = 0;
+    var i02 = 0;
+    var i03 = 0;
+    
+    var i10 = 0;
+    var i11 = 0;
+    var i12 = 0;
+    var i13 = 0;
+
+    var i20 = 0;
+    var i21 = 0;
+    var i22 = 0;
+    var i23 = 0;
+
+    var i30 = 0;
+    var i31 = 0;
+    var i32 = 0;
+    var i33 = 0;
+
+
+
+
+    var txt00 = "Two years had gone by since I started taking cello lessons with Mrs Handman.";
+    var txt01 = "To me, she was a great teacher and things were progressing smoothly."
+    var txt02 = "Week after week I practiced and quickly got a lot better than my peers at school.";
+    var txt03 = "I knew this was thanks to my private lessons, but I still took pride in being the best at something."
+
+
+    var txt10 = "“We can no longer continue our lessons after this week”";
+    var txt11 = "Was a jarring thing to hear as I was packing up my cello to leave.";
+    var txt12 = "I looked at her with bewilderment and asked what the reason was.";
+
+    var txt20 = "She explained that her time in the area was up and she was moving away soon.";
+    var txt21 = "I can imagine how panicked I looked in that moment and "
+    var txt22 = "she assured me it was nothing I did wrong, it was just how life goes.";
+    var txt23 = "I didn’t realize till much later that Miss Handman was a college student and teaching was a side gig";
+
+    var txt30 = "After we said our goodbyes I walked out of the building.";
+    var txt31 = "I never saw Miss Handman again, but I’m still hoping I run into her eventually";
+    var txt32 = "One thing she left me with was a brochure for an organization called Stringendo";
+    var txt33 = "Little did I know, my world of music was about to grow again"
+
+
+    var speed = 30;
+
+
+
+    function typeWriter00() {
+        if (i00 < txt00.length) {
+            document.getElementById("a1").innerHTML += txt00.charAt(i00);
+            i00++;
+            setTimeout(typeWriter00, speed);
+        }
+    }
+
+    function typeWriter01(){
+        if (i01 < txt01.length) {
+            document.getElementById("c1").innerHTML += txt01.charAt(i01);
+            i01++;
+            setTimeout(typeWriter01, speed);
+        }
+    }
+
+    function typeWriter02(){
+        if (i02 < txt02.length) {
+            document.getElementById("e1").innerHTML += txt02.charAt(i02);
+            i02++;
+            setTimeout(typeWriter02, speed);
+        }
+    }
+
+    function typeWriter03(){
+        if (i03 < txt03.length) {
+            document.getElementById("g1").innerHTML += txt03.charAt(i03);
+            i03++;
+            setTimeout(typeWriter03, speed);
+        }
+    }
+
+
+    function typeWriter10(){
+        if (i10 < txt10.length) {
+            document.getElementById("g2").innerHTML += txt10.charAt(i10);
+            i10++;
+            setTimeout(typeWriter10, speed);
+        }
+    }
+
+    function typeWriter11(){
+        if (i11 < txt11.length) {
+            document.getElementById("e2").innerHTML += txt11.charAt(i11);
+            i11++;
+            setTimeout(typeWriter11, speed);
+        }
+    }
+    
+    function typeWriter12(){
+        if (i12 < txt12.length) {
+            document.getElementById("c2").innerHTML += txt12.charAt(i12);
+            i12++;
+            setTimeout(typeWriter12, speed);
+        }
+    }
+
+    function typeWriter13(){
+        if (i13 < txt13.length) {
+            document.getElementById("a2").innerHTML += txt13.charAt(i13);
+            i13++;
+            setTimeout(typeWriter13, speed);
+        }
+    }
+
+    function typeWriter20(){
+        if (i20 < txt20.length) {
+            document.getElementById("a3").innerHTML += txt20.charAt(i20);
+            i20++;
+            setTimeout(typeWriter20, speed);
+        }
+    }
+    function typeWriter21(){
+        if (i21 < txt21.length) {
+            document.getElementById("g3").innerHTML += txt21.charAt(i21);
+            i21++;
+            setTimeout(typeWriter21, speed);
+        }
+    }
+    function typeWriter22(){
+        if (i22 < txt22.length) {
+            document.getElementById("e3").innerHTML += txt22.charAt(i22);
+            i22++;
+            setTimeout(typeWriter22, speed);
+        }
+    }
+    function typeWriter23(){
+        if (i23 < txt23.length) {
+            document.getElementById("c3").innerHTML += txt23.charAt(i23);
+            i23++;
+            setTimeout(typeWriter23, speed);
+        }
+    }
+    function typeWriter30(){
+        if (i30 < txt30.length) {
+            document.getElementById("c4").innerHTML += txt30.charAt(i30);
+            i30++;
+            setTimeout(typeWriter30, speed);
+        }
+    }
+    function typeWriter31(){
+        if (i31 < txt31.length) {
+            document.getElementById("e4").innerHTML += txt31.charAt(i31);
+            i31++;
+            setTimeout(typeWriter31, speed);
+        }
+    }
+    function typeWriter32(){
+        if (i32 < txt32.length) {
+            document.getElementById("g4").innerHTML += txt32.charAt(i32);
+            i32++;
+            setTimeout(typeWriter32, speed);
+        }
+    }
+    function typeWriter33(){
+        if (i33 < txt33.length) {
+            document.getElementById("a4").innerHTML += txt33.charAt(i33);
+            i33++;
+            setTimeout(typeWriter33, speed);
+        }
+    }
+    
+    var timeout = 0;
+
+    typeWriter00()
+    timeout += ( (txt00.length + 1)  * 30) 
+    setTimeout(typeWriter01, timeout)
+    timeout += ( (txt01.length + 1)  * 30) 
+    setTimeout(typeWriter02, timeout)
+    timeout += ( (txt02.length + 1)  * 30) 
+    setTimeout(typeWriter03, timeout)
+    timeout += ( (txt03.length + 1)  * 30) 
+    
+    setTimeout(typeWriter10, timeout)
+    timeout += ( (txt10.length + 1)  * 30) 
+    setTimeout(typeWriter11, timeout)
+    timeout += ( (txt11.length + 1)  * 30) 
+    setTimeout(typeWriter12, timeout)
+    timeout += ( (txt12.length + 1)  * 30) 
+    // setTimeout(typeWriter13, )
+   
+    
+    setTimeout(typeWriter20, timeout)
+    timeout += ( (txt20.length + 1)  * 30) 
+    setTimeout(typeWriter21, timeout)
+    timeout += ( (txt21.length + 1)  * 30) 
+    setTimeout(typeWriter22, timeout)
+    timeout += ( (txt22.length + 1)  * 30) 
+    setTimeout(typeWriter23, timeout)
+    timeout += ( (txt23.length + 1)  * 30) 
+    
+
+    setTimeout(typeWriter30, timeout)
+    timeout += ( (txt30.length + 1)  * 30) 
+    setTimeout(typeWriter31, timeout)
+    timeout += ( (txt31.length + 1)  * 30) 
+    setTimeout(typeWriter32, timeout)
+    timeout += ( (txt32.length + 1)  * 30) 
+    setTimeout(typeWriter33, timeout)
+
+
+
+</script>
+
+</body>
+</html>
